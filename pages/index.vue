@@ -173,7 +173,7 @@
                 Please limit your message to {{ $v.message.$params.maxLength.max }} characters.
               </div>
               <div v-if="$v.termsAgree.$error" class="mx-6 text-red-600">
-                Accept Terms and Conditions
+                Please Accept the Terms and Conditions
               </div>
               <div :class="{ 'form-group--error': $v.termsAgree.$error }" class="text-sm text-left text-gray-900 my-3 mx-6">
                 <span>
@@ -184,7 +184,7 @@
                     type="checkbox"
                   >
                 </span> By submitting this form, I agree to the
-                <a class=" text-green-600 hover:text-green-800" href="/tos" rel="blank">
+                <a class=" text-green-600 hover:text-green-800" href="/terms" rel="blank">
                   Terms and Conditions
                 </a> For more information about our
                 privacy practices, see our
@@ -204,7 +204,7 @@
                 </button>
               </div>
               <p v-if="submitStatus === 'OK'" class="text-green-600 text-center text-lg pb-2">
-                Thank you for your interest. I will get in contact with you as soon as possible.
+                Thank you for your interest.
               </p>
               <p v-if="submitStatus === 'ERROR'" class="text-red-600 text-center pb-2">
                 Please fix the errors indicated.
@@ -296,7 +296,7 @@ export default {
         this.submitStatus = 'PENDING'
         setTimeout(() => {
           this.submitStatus = 'OK'
-        }, 500)
+        }, 1000)
         setTimeout(() => {
           this.toggleModal = false
           this.submitStatus = ''
@@ -305,7 +305,10 @@ export default {
           this.message = ''
           this.termsAgree = true
           this.showMenu = true
-        }, 8000)
+        }, 1500)
+        setTimeout(() => {
+          this.$router.push('/thankyou')
+        }, 2700)
       }
     }
   }
