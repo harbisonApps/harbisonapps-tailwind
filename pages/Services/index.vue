@@ -24,7 +24,12 @@
             <h3 class="text-center text-gray-900 font-semibold text-xl my-3">
               Recent Posts
             </h3>
-            <PostLinks />
+            <PostLinks
+              v-for="post in posts"
+              :id="post.id"
+              :key="post.id"
+              :title="post.title"
+            />
           </aside>
           <aside>
             <Newsletter />
@@ -39,7 +44,24 @@
 import Newsletter from '@/components/NewsLetter'
 import PostLinks from '@/components/Blog/PostLinks'
 export default {
-  components: { Newsletter, PostLinks }
+  components: { Newsletter, PostLinks },
+  asyncData (context) {
+    return context.app.$storyapi.get('cdn/stories/', {
+      version: context.isDev ? 'draft' : 'published',
+      starts_with: 'blog/'
+    })
+      .then((res) => {
+        return {
+          // posts: res.data.stories.slice(0, 5).map((bp) => {
+          posts: res.data.stories.map((bp) => {
+            return {
+              id: bp.slug,
+              title: bp.content.title
+            }
+          })
+        }
+      })
+  }
 }
 </script>
 
