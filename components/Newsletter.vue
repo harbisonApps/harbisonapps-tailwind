@@ -28,10 +28,10 @@
           title="Your email address"
         >
       </div>
-      <div class="w-full text-center px-2">
+      <div class=" w-full text-center px-2 lg:pl-3">
         <button
           data-element="submit"
-          class="mt-2 formkit-submit button--green text-gray-100 text-lg w-full rounded my-2"
+          class="mt-2 formkit-submit button--green text-gray-100 text-lg w-11/12 rounded my-2"
         >
           <div class="formkit-spinner">
             <div /><div /><div />

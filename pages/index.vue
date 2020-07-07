@@ -119,11 +119,6 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 lg:w-1/3 md:px-1 ">
-          <div class="p-1">
-            <Newsletter />
-          </div>
-        </div>
       </div>
     </div>
     <transition name="fade">
@@ -222,12 +217,9 @@
 
 <script>
 import { required, minLength, maxLength, email } from 'vuelidate/lib/validators'
-import Newsletter from '@/components/NewsLetter'
 export default {
   layout: 'landing',
-  components: {
-    Newsletter
-  },
+  components: {},
   data () {
     return {
       toggleModal: false,
