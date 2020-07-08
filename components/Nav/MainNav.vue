@@ -1,26 +1,16 @@
 <template>
   <div>
     <div class="absolute bg-green-800 w-full py-3 invisible md:visible">
-      <div class="z-10 absolute left-0 ml-3 bg-transparent">
+      <div class="z-10 absolute left-0 ml-3 xl:ml-12 -mt-1 bg-transparent">
         <button
           @click="toggleTheme"
-          class="rounded-full bg-gray-300"
+          class=""
           type="button"
           name="Switch Theme"
           title="Switch Theme"
         >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            class="w-8 h-8"
-          >
-            <path
-              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="lightgray" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none" />
+            <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z" />
           </svg>
         </button>
       </div>
@@ -51,23 +41,13 @@
       <div class=" w-full">
         <button
           @click="toggleTheme"
-          class="rounded-full bg-gray-300 z-10 absolute left-0 ml-3"
+          class=" z-10 absolute left-0 ml-3"
           type="button"
           name="Switch Theme"
           title="Switch Theme"
         >
-          <svg
-            fill="none"
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            class="w-8 h-8"
-          >
-            <path
-              d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-            />
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="lightgray" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none" />
+            <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z" />
           </svg>
         </button>
         <h1 class="text-center text-2xl text-gray-300">
@@ -114,3 +94,10 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+/* .toggle-settings{
+  height: 50px;
+  color: lightgray;
+} */
+</style>
