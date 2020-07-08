@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="text-left text-gray-200 px-2 md:px-4 -mt-48 md:-mt-56 lg:-mt-64 mx-auto w-12/12 md:w-11/12 lg:w-3/4">
+    <div class="text-left text-gray-200 px-2 md:px-4 -mt-40 lg:-mt-56 mx-auto w-full lg:w-11/12">
       <div id="header" class="bg-gray-800 rounded-t-md text-center pt-4 md:w-3/4 lg:w-3/5 mx-auto pb-2">
         <h2 class="text-center text-3xl mb-1">
           <strong>Terms of Service</strong>

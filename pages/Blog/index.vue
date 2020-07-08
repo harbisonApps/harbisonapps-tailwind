@@ -7,6 +7,10 @@
     </div>
 
     <div class="bg-gray-800 rounded-md pb-1 pt-4 -mt-3 md:-mt-2 w-full">
+      <p class="text-center mb-3">
+        A weekly blog dedicated to VueJs, the MEVN stack, and a handful of topics I find interesting.
+      </p>
+
       <div class="flex flex-wrap justify-between lg:justify-center px-2 mb-3">
         <!-- Blog Posts -->
         <PostPreview
