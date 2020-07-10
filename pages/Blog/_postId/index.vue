@@ -1,5 +1,5 @@
 <template>
-  <div class="text-left text-gray-200 px-2 md:px-4 mx-auto w-full lg:w-11/12">
+  <div class="text-left text-gray-200 px-2 md:px-4 mx-auto w-full lg:w-3/4">
     <section id="blog-post" v-editable="blokPost" class="pt-16">
       <div id="header" class="text-center pt-1 pb-2 md:w-3/4 lg:w-3/5 mx-auto">
         <div class=" flex justify-center">

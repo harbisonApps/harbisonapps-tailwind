@@ -50,12 +50,7 @@
           </p>
         </div>
         <div class="w-full md:w-1/3 lg:w-1/4">
-          <aside class="border bg-gray-300 border-gray-700 rounded mb-3 ">
-            <h3 class="text-center text-gray-900 font-semibold text-xl my-3">
-              Recent Posts
-            </h3>
-            <PostLinks />
-          </aside>
+          <AboutRelated />
         </div>
       </div>
     </div>
@@ -63,9 +58,9 @@
 </template>
 
 <script>
-import PostLinks from '@/components/Blog/PostLinks'
+import AboutRelated from '@/components/Nav/AboutRelated'
 export default {
-  components: { PostLinks }
+  components: { AboutRelated }
 }
 </script>
 
