@@ -6,27 +6,16 @@
       </h1>
     </div>
     <div class="z-10 absolute left-0 mt-3 ml-3 bg-transparent">
-      <button
+      <span
         @click="toggleTheme"
-        class="rounded-full bg-gray-300"
-        type="button"
         name="Switch Theme"
         title="Switch Theme"
+        class=" cursor-pointer"
       >
-        <svg
-          fill="none"
-          stroke="currentColor"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="2"
-          viewBox="0 0 24 24"
-          class="w-8 h-8"
-        >
-          <path
-            d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="lightgray" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none" />
+          <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z" />
         </svg>
-      </button>
+      </span>
     </div>
     <div class="masthead">
       <div class="leading-10 text-white text-3xl w-auto text-center px-6">
@@ -36,21 +25,21 @@
         Get the Website you deserve
       </button>
     </div>
-    <div class="text-center mt-2 mx-auto w-10/12">
-      <h2 class="text-center pt-2 text-sm italic text-gray-300 mx-1">
+    <div class="text-center dark:text-gray-300 text-gray-900 mt-2 mx-auto w-10/12">
+      <h2 class="text-center pt-2 text-sm italic mx-1">
         Pride, Professionalism, Attention to Detail
       </h2>
-      <p class=" text-left text-gray-300 my-4">
+      <p class=" text-left my-4">
         Whether you need a new site and you're on a limited budget, or you need a full redesign,
         I wll give you a design that will resonate with your target audience.
       </p>
-      <p class=" text-left text-gray-300">
+      <p class=" text-left">
         Every website design is clean, mobile friendly, and built with the fastest and lightest (smallest)
         JavaScript Framework on the market. Each image is optimized for quality and speed. Page
         loading times and accessibility are essential today and I will ensure your site is up to
         the challenge. Turn around time is based on features and complexity.
       </p>
-      <div class="text-left text-gray-300">
+      <div class="text-left">
         <em><small>&mdash; Brian Leabold</small></em>
       </div>
     </div>
@@ -250,19 +239,9 @@ export default {
     }
   },
   methods: {
-
     toggleTheme () {
-      // const m = localStorage.getItem('theme')
-      // this.$colorMode.preference =
-      //   this.$colorMode.value === 'light' ? 'dark' : 'light'
-      // if (m === 'dark') {
-      //   localStorage.setItem('theme', 'dark')
-      // } else {
-      //   localStorage.removeItem('theme')
-      // }
-
-      // eslint-disable-next-line no-console
-      console.log('toggle theme')
+      this.$colorMode.preference =
+        this.$colorMode.value === 'light' ? 'dark' : 'light'
     },
     reset () {
       this.name = ''

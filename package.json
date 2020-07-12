@@ -21,12 +21,15 @@
     "vuelidate": "^0.7.5"
   },
   "devDependencies": {
+    "@nuxtjs/color-mode": "^1.0.0",
     "@nuxtjs/eslint-config": "^1.0.1",
     "@nuxtjs/eslint-module": "^1.0.0",
     "@nuxtjs/sitemap": "^2.4.0",
+    "@nuxtjs/svg": "^0.1.11",
     "@nuxtjs/tailwindcss": "^1.0.0",
     "babel-eslint": "^10.0.1",
     "eslint": "^6.1.0",
-    "eslint-plugin-nuxt": ">=0.4.2"
+    "eslint-plugin-nuxt": ">=0.4.2",
+    "tailwindcss-dark-mode": "^1.1.4"
   }
 }

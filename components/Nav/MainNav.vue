@@ -2,17 +2,17 @@
   <div>
     <div class="absolute bg-green-800 w-full py-3 invisible md:visible">
       <div class="z-10 absolute left-0 ml-3 xl:ml-12 -mt-1 bg-transparent">
-        <button
+        <span
           @click="toggleTheme"
-          class=""
-          type="button"
           name="Switch Theme"
           title="Switch Theme"
+          class=" cursor-pointer"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="lightgray" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none" />
             <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z" />
           </svg>
-        </button>
+        </span>
+        <!-- <ColorMode /> -->
       </div>
       <div class="">
         <h1 class="text-center md:-ml-40 lg:ml-0 text-2xl text-gray-300">
@@ -38,19 +38,25 @@
       </menu>
     </div>
     <div class=" visible md:invisible absolute text-center bg-green-800 w-full py-2">
-      <div class=" w-full">
-        <button
+      <div class=" w-full inline-block">
+        <span
           @click="toggleTheme"
-          class=" z-10 absolute left-0 ml-3"
-          type="button"
+          class=" z-10 absolute left-0 ml-3 cursor-pointer"
           name="Switch Theme"
           title="Switch Theme"
         >
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="lightgray" width="40px" height="40px"><path d="M0 0h24v24H0z" fill="none" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="lightgray"
+            width="40px"
+            height="40px"
+          ><path d="M0 0h24v24H0z" fill="none" />
             <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16.01H3V4.99h18v14.02zM8 16h2.5l1.5 1.5 1.5-1.5H16v-2.5l1.5-1.5-1.5-1.5V8h-2.5L12 6.5 10.5 8H8v2.5L6.5 12 8 13.5V16zm4-7c1.66 0 3 1.34 3 3s-1.34 3-3 3V9z" />
           </svg>
-        </button>
-        <h1 class="text-center text-2xl text-gray-300">
+        </span>
+        <!-- <ColorMode class=" absolute left-0 mt-1 ml-1" /> -->
+        <h1 class="text-center text-2xl ml-3 text-gray-300">
           Harbison Apps
         </h1>
       </div>
@@ -76,20 +82,13 @@
 </template>
 
 <script>
+// import ColorMode from '@/components/ColorMode'
 export default {
+  // components: { ColorMode },
   methods: {
     toggleTheme () {
-      // const m = localStorage.getItem('theme')
-      // this.$colorMode.preference =
-      //   this.$colorMode.value === 'light' ? 'dark' : 'light'
-      // if (m === 'dark') {
-      //   localStorage.setItem('theme', 'dark')
-      // } else {
-      //   localStorage.removeItem('theme')
-      // }
-
-      // eslint-disable-next-line no-console
-      console.log('toggle theme')
+      this.$colorMode.preference =
+        this.$colorMode.value === 'light' ? 'dark' : 'light'
     }
   }
 }

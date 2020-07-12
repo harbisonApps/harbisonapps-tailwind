@@ -1,7 +1,7 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="dark:bg-gray-900 bg-gray-100">
     <nuxt />
-    <footer class="text-gray-300 text-center text-2xl py-2">
+    <footer class="dark:text-gray-300 text-gray-900 text-center text-2xl py-2">
       &copy; 2020 Harbison Apps
     </footer>
   </div>

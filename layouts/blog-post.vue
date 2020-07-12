@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="dark:bg-gray-900 bg-gray-100">
     <MainNav />
     <nuxt />
     <Footer />

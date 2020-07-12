@@ -1,7 +1,6 @@
 <template>
-  <article class="ml-3 mb-3 lg:ml-6 text-lg font-semibold text-green-700">
-    <hr>
-    <nuxt-link :to="'/blog/' + id" class="p-2 text-green-700">
+  <article class="ml-3 mb-3 lg:ml-6 text-lg text-green-700">
+    <nuxt-link :to="'/blog/' + id" exact-active-class=" font-semibold" class="p-2 text-green-700">
       {{ title }}
     </nuxt-link>
   </article>

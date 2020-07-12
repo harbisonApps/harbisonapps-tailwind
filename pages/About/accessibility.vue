@@ -1,12 +1,12 @@
 <template>
-  <div class="text-left text-gray-200 px-2 md:px-4 -mt-40 lg:-mt-56 mx-auto w-full lg:w-11/12">
-    <div id="header" class="bg-gray-800 rounded-t-md text-center pt-4 md:w-3/4 lg:w-3/5 mx-auto pb-2">
+  <div class="text-left dark:text-gray-200 text-gray-900 px-2 md:px-4 -mt-40 lg:-mt-56 mx-auto w-full lg:w-11/12">
+    <div id="header" class="dark:bg-gray-800 bg-gray-300 rounded-t-md text-center pt-4 md:w-3/4 lg:w-3/5 mx-auto pb-2">
       <h3 class="text-center text-3xl mb-1">
         <strong>Accessibility Statement</strong>
       </h3>
     </div>
 
-    <div class="bg-gray-800 rounded-md px-4 pb-1 pt-4 -mt-3 md:-mt-2 w-full">
+    <div class="dark:bg-gray-800 bg-gray-300 rounded-md px-4 pb-1 pt-4 -mt-3 md:-mt-2 w-full">
       <div class="flex flex-wrap justify-between lg:justify-center">
         <div class="md:pr-2 w-full md:w-2/3 lg:w-3/4">
           <p class="mb-3">

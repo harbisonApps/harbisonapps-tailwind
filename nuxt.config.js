@@ -73,10 +73,13 @@ export default {
    ** Nuxt.js dev-modules
    */
   buildModules: [
+    '@nuxtjs/svg',
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
     // Doc: https://github.com/nuxt-community/nuxt-tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // Doc: https://github.com/nuxt-community/color-mode-module
+    '@nuxtjs/color-mode'
   ],
   /*
    ** Nuxt.js modules
@@ -143,7 +146,8 @@ export default {
       'formkit-field',
       'formkit-input',
       'formkit-submit',
-      'formkit-guarantee'
+      'formkit-guarantee',
+      'dark-mode'
     ]
   },
   tailwindcss: {

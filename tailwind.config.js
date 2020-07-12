@@ -8,9 +8,27 @@ module.exports = {
   prefix: '',
   important: false,
   separator: ':',
-  theme: {},
-  variants: {},
-  plugins: [],
+  theme: { darkSelector: '.dark-mode' },
+  variants: {
+    backgroundColor: [
+      'dark',
+      'dark-hover',
+      'dark-group-hover',
+      'dark-even',
+      'dark-odd',
+      'hover',
+      'responsive'
+    ],
+    borderColor: [
+      'dark',
+      'dark-focus',
+      'dark-focus-within',
+      'hover',
+      'responsive'
+    ],
+    textColor: ['dark', 'dark-hover', 'dark-active', 'hover', 'responsive']
+  },
+  plugins: [ require('tailwindcss-dark-mode')() ],
   purge: {
     // Learn more on https://tailwindcss.com/docs/controlling-file-size/#removing-unused-css
     enabled:

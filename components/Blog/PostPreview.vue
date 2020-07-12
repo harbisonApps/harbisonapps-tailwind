@@ -1,6 +1,6 @@
 <template>
-  <div class="mt-2 w-full md:w-1/2 lg:w-1/3 text-gray-300">
-    <div class=" mx-1 border border-gray-300 rounded">
+  <div class="mt-2 w-full md:w-1/2 lg:w-1/3 dark:text-gray-200 text-gray-900">
+    <div class=" mx-1 border dark:border-gray-300 border-gray-900 rounded">
       <div class="m-1 flex justify-center">
         <img
           :src="thumbnail"

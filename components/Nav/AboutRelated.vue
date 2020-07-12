@@ -1,5 +1,5 @@
 <template>
-  <aside class="border bg-gray-300 border-gray-700 rounded mb-3 ">
+  <aside class="border bg-gray-100 dark:bg-gray-300 border-gray-700 rounded mb-3">
     <h3 class="text-center text-gray-900 font-semibold text-xl my-3">
       Related Pages
     </h3>
@@ -13,7 +13,7 @@
           :to="link.to"
           exact
           exact-active-class=" font-semibold"
-          class="text-green-700 underline"
+          class="text-green-700 mb-2 p-2"
         >
           {{ link.label }}
         </nuxt-link>

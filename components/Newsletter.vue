@@ -1,7 +1,7 @@
 <template>
   <form
     action="https://app.convertkit.com/forms/1504497/subscriptions"
-    class="seva-form formkit-form bg-gray-800 py-2 md:py-8 lg:py-3 rounded"
+    class="seva-form formkit-form dark:bg-gray-800 bg-gray-100 py-2 md:py-8 lg:py-3 rounded"
     method="post"
     data-sv-form="1504497"
     data-uid="645f1fc9a0"
@@ -11,7 +11,7 @@
     min-width="400 500 600 700 800"
   >
     <div
-      class="formkit-subheader text-2xl px-2 text-center mt-2 text-gray-300"
+      class="formkit-subheader text-2xl px-2 text-center mt-2 dark:text-gray-200 text-gray-900"
       data-element="subheader"
     >
       <p>Subscribe and get updated via email</p>
@@ -20,7 +20,7 @@
     <div data-element="fields" data-stacked="false" class="seva-fields mx-auto formkit-fields mt-2">
       <div class="formkit-field text-center px-2">
         <input
-          class="formkit-input py-2 pl-4 w-11/12 my-2 rounded text-gray-900"
+          class="formkit-input py-2 pl-4 w-11/12 my-2 rounded text-center text-lg text-gray-900"
           name="email_address"
           placeholder="Your email address"
           required=""
@@ -39,7 +39,7 @@
         </button>
       </div>
     </div>
-    <div class="formkit-guarantee text-gray-300 text-sm" data-element="guarantee">
+    <div class="formkit-guarantee dark:text-gray-200 text-gray-900 text-sm" data-element="guarantee">
       <p class="px-2">
         You will only receive notifications about new content and special discounts. You can unsubscribe at any time.
       </p>

@@ -1,13 +1,13 @@
 <template>
-  <div class="text-left text-gray-200 px-2 md:px-4 mx-auto w-full lg:w-3/4">
+  <div class="text-left dark:text-gray-200 text-gray-900 px-2 md:px-4 mx-auto w-full lg:w-3/4">
     <section id="blog-post" v-editable="blokPost" class="pt-16">
       <div id="header" class="text-center pt-1 pb-2 md:w-3/4 lg:w-3/5 mx-auto">
         <div class=" flex justify-center">
-          <img :src="image" :title="title" :alt="title" class=" rounded-md">
+          <img :src="image" :title="title" :alt="title" class="mt-3 md:mt-0 rounded-md">
         </div>
       </div>
 
-      <article :title="title" class="bg-gray-800 rounded-md p-2 mb-3">
+      <article :title="title" class="dark:bg-gray-800 bg-gray-200 rounded-md p-2 mb-3">
         <h2 id="post-title" class="text-center text-xl">
           {{ title }}
         </h2>
