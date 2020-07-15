@@ -1,6 +1,14 @@
 # harbisonapps-tailwind
 
-> Harbison Apps Nuxt app styled with Tailwind
+> Harbison Apps - Nuxt app styled with Tailwind
+
+[![NPM Version][npm-image]][npm-url]
+[![Build Status][travis-image]][travis-url]
+[![Downloads Stats][npm-downloads]][npm-url]
+
+loerm ipsum
+
+![](header.png)
 
 ## Build Setup
 
@@ -19,4 +27,4 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+For a detailed explanation of how Nuxt works, check out [Nuxt.js docs](https://nuxtjs.org).
