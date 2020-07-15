@@ -4,7 +4,7 @@
 
 ![](ha.webp)
 
-This version of Harbison Apps website is built on Nuxt with PWA support. The blog is backed by Storyblok.
+>This version of Harbison Apps website is built on Nuxt with PWA support. The blog is backed by Storyblok.
 And and 99% of the CSS is courtesy of Tailwind.
 
 ![](ha-b.webp)
