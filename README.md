@@ -2,13 +2,12 @@
 
 > Harbison Apps - Nuxt app styled with Tailwind
 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
+![](ha.webp)
 
-loerm ipsum
+This version of Harbison Apps website is built on Nuxt with PWA support. The blog is backed by Storyblok.
+And and 99% of the CSS is courtesy of Tailwind.
 
-![](header.png)
+![](ha-b.webp)
 
 ## Build Setup
 
