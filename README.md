@@ -22,13 +22,14 @@ $ npm run install
 $ npm run dev
 ```
 
-# build for production and launch server
+# build for production and launch local server
 ```bash
 $ npm run build
 $ npm run start
 ```
 # generate static project
 ```bash
+# generate all static assets
 $ npm run generate
 ```
 

@@ -20,7 +20,7 @@
       </p>
       <div class="mx-1 m-auto p-1">
         <nuxt-link :to="'/blog/' + id">
-          <button class=" bg-green-800 rounded w-full">
+          <button class="text-gray-200 bg-green-800 rounded py-2 w-full">
             Read
           </button>
         </nuxt-link>

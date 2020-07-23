@@ -6,17 +6,26 @@
       </h2>
     </div>
 
-    <div class="dark:bg-gray-800 bg-gray-300 rounded-md px-4 pb-1 pt-4 -mt-3 md:-mt-2 w-full">
+    <div class="dark:bg-gray-800 bg-gray-300 rounded-md px-4 pb-1 pt-4 mb-3 -mt-3 md:-mt-2 w-full">
       <div class="flex flex-wrap justify-between lg:justify-center">
         <div class="md:pr-2 w-full md:w-2/3 lg:w-3/4">
-          <h3 class=" text-xl text-center mb-3">
+          <div class=" text-xl text-center mb-3">
             Building the next generation of web apps
-          </h3>
+          </div>
 
           <p class="mb-3">
             I have built over 70 websites over years. From static HTML sites and ones utilizing
             content management systems; to dynamic projects build with .NET, Angular, and Vue.
-            Vue, as well as Nuxt and Quasar are my go to for new or rebuilding websites.
+            Vue, along with Nuxt and Quasar are my go to for new or rebuilding websites.
+          </p>
+
+          <h3 class=" text-2xl text-center mb-3">
+            Static Websites
+          </h3>
+
+          <p class="mb-3">
+            Do you need a simple website? Do you have one, but don't know where to start changing it
+            or how to? I will give you exactly what you are looking for.
           </p>
         </div>
         <div class="w-full md:w-1/3 lg:w-1/4">
@@ -31,7 +40,7 @@
               :title="post.title"
             />
           </aside>
-          <aside>
+          <aside class="mb-3">
             <Newsletter />
           </aside>
         </div>

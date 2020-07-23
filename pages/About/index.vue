@@ -31,7 +31,7 @@
             tons of useful libraries, a solid community and a great toolset.
           </p>
 
-          <ul class="mb-3 ml-12 md:ml-56 lg:ml-64 list-disc">
+          <ul class="mb-3 ml-12 md:ml-32 lg:ml-64 list-disc">
             <li>Development Speed</li>
             <li>Smallest JavaScript Payload</li>
             <li>Versatile</li>
@@ -42,7 +42,7 @@
 
           <p class="mb-3">
             My blog post on why
-            <nuxt-link class="text-gray-500" exact to="/blog">
+            <nuxt-link class="text-gray-500" exact to="/blog/why-vue">
               <span class=" underline">
                 I Love Vue
               </span>
