@@ -14,7 +14,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^3.4.3",
     "nuxt-compress": "^2.0.0",
     "postcss-import": "^12.0.1",
     "storyblok-nuxt": "^1.2.0",
